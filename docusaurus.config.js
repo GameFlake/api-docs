@@ -2,13 +2,13 @@
 module.exports = {
   title: 'API de GameFlake',
   tagline: 'Documentación de API de plataforma de intercambio de videojuegos',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://gameflake.github.io',
+  baseUrl: '/api-docs/build/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/gameflake_logo.ico',
   organizationName: 'GameFlake', // Usually your GitHub org/user name.
-  projectName: 'GameFlake', // Usually your repo name.
+  projectName: 'api-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'GameFlake API',
