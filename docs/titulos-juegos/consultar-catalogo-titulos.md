@@ -7,9 +7,11 @@ sidebar_position: 1
 ---
 
 Consulta la información de todos los títulos en el catálogo de GameFlake.
+Un título, a diferencia de un juego, reprenta un videojuego del cual pueden
+haber muchas copias o juegos registrados en GameFlake.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/titulos`
+`GET https://gameflake.game/api/titulos`
 
 ### Parámetros de la petición.
 No lleva ningún parámetro en el cuerpo de la petición.
@@ -24,7 +26,7 @@ los datos de un título.
 | idTitulo         | Entero       | Identificador único del título                                                         |
 | nombre           | String       | Nombre del título                                                                      |
 | fechaLanzamiento | Fecha        | Fecha en la que salió por primera vez el título                                        |
-| edicion          | String       | Variante del titulo. Es útil para aquellos que fueron lanzados con mas de una versión. |
+| edicion          | String       | Variante del título. Es útil para aquellos que fueron lanzados con mas de una versión. |
 | imgRuta          | String       | Ruta a la imagen del título                                                            |
 | descripcion      | String       | Texto promocional del título                                                           |
 | calificacion     | Entero       | Un entero entre 1 y 5 indicando la calificación del título                             |
