@@ -25,7 +25,12 @@ module.exports = {
         },
         {
           href: 'https://github.com/GameFlake/GameFlake',
-          label: 'GitHub del sitio',
+          label: 'GitHub de GameFlake',
+          position: 'right',
+        },
+        {
+          href: 'https://purnito.codes',
+          label: 'Sitio GameFlake',
           position: 'right',
         },
       ],
@@ -40,14 +45,30 @@ module.exports = {
               label: 'Introducción',
               to: '/docs/intro',
             },
+            {
+              label: 'Autenticación y cuentas',
+              to: '/docs/api_iniciar_sesion',
+            },
+            {
+              label: 'Títulos y juegos',
+              to: '/docs/consultar_catalogo_titulos',
+            },
+            {
+              label: 'Intercambio de juegos',
+              to: '/docs/consultar_ofertas_recibidas',
+            },
           ],
         },
         {
           title: 'Más',
           items: [
             {
-              label: 'GitHub del sitio',
+              label: 'GitHub de GameFlake',
               href: 'https://github.com/GameFlake/GameFlake',
+            },
+            {
+              label: 'Sitio GameFlake',
+              href: 'https://purnito.codes',
             },
             {
               label: 'Hoja de aprendizaje',
