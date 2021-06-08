@@ -6,13 +6,24 @@ slug: /registrar_usuario
 sidebar_position: 3
 ---
 
-Elimina un token de autenticación emitido previamente.
+Registra una nueva cuenta de usuario.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/tokens/revoke`
+`POST https://gameflake.game/api/users/store`
 
 ### Parámetros de la petición.
-No lleva ningún parámetro en el cuerpo de la petición.
+| Nombre       | Tipo de dato | ¿Es obligatorio? | Descripción                                        |
+| ------------ | ------------ | ---------------- | -------------------------------------------------- |
+| `first_name` | String       | Si               | Nombre del usuario de la nueva cuenta              |
+| `last_name`  | String       | Si               | Apellido del usuario de la nueva cuenta            |
+| `password`   | String       | Si               | Contraseña de la nueva cuenta                      |
+| `email`      | String       | Si               | Dirección de correo electrónico de la nueva cuenta |
+| `phone`      | String       | Si               | Numero de teléfono de la nueva cuenta              |
+| `user_name`  | String       | Si               | Nombre de usuario o username de la nueva cuenta    |
+
+:::info
+Este es uno de los pocos endpoints que no requiere un token en el encabezado `Authorization: Bearer <api_token_aqui>`.
+:::
 
 
 ### Ejemplo de petición y respuesta

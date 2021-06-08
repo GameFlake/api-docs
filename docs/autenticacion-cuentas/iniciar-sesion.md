@@ -9,8 +9,8 @@ sidebar_position: 1
 Intercambia las credenciales del usuario por un token y un arreglo de permisos. 
 
 El token representa al usuario en un dispositivo y debe acompañar a todas las 
-peticiones posteriores que requieran autenticacion. El token tambien persiste 
-hasta que se hace una peticion para revocarlo.
+peticiones posteriores que requieran autenticación. El token tambien persiste 
+hasta que se hace una petición para revocarlo.
 
 El arreglo de permisos contiene una serie de cadenas que representan las acciones
 que tiene permitidas el usuario en el sistema.
@@ -19,11 +19,11 @@ que tiene permitidas el usuario en el sistema.
 `POST https://gameflake.game/api/tokens/create`
 
 ### Parámetros de la petición.
-| Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                    |
-| ------------- | ------------ | ---------------- | ---------------------------------------------- |
-| `email`       | String       | Si               | Dirección de correo electrónico del usuario.   |
-| `password`    | String       | Si               | Contraseña de la cuenta del usuario.           |
-| `device_name` | String       | Si               | Nombre del dispositivo donde se inicia sesión. |
+| Nombre              | Tipo de dato | ¿Es obligatorio? | Descripción                                             |
+| ------------------- | ------------ | ---------------- | ------------------------------------------------------- |
+| `email_or_username` | String       | Si               | Dirección de correo electrónico o username del usuario. |
+| `password`          | String       | Si               | Contraseña de la cuenta del usuario.                    |
+| `device_name`       | String       | Si               | Nombre del dispositivo donde se inicia sesión.          |
 
 :::info
 Este es uno de los pocos endpoints que no requiere un token en el encabezado `Authorization: Bearer <api_token_aqui>`.
