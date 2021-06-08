@@ -17,12 +17,30 @@ encabezado HTTP que se ve como el siguiente:
 
 `Authorization: Bearer <api_token_aqui>`
 
-Cualquier petición enviada sin un token fallará.
+Cualquier petición enviada sin un token a un endpoint que requiera autenticación fallará con la 
+siguiente respuesta:
+```json
+{
+    "error": "No autenticado. Buen intento.",
+    "codigo": 401
+}
+```
 
 :::caution
 Debes reemplazar `<api_token_aqui>` con un token de la API.
 :::
 
+
+## Autorización
+GameFlake utiliza un sistema de control de acceso basado en roles y permisos. Esto quiere decir que además del token de autenticación, para que una petición devuelva una respuesta exitosa, el usuario
+asociado al token debe tener el permiso correspondiente a la acción de la petición. Si esto no se 
+cumple, la API regresa la siguiente respuesta de error:
+```json
+{
+    "error": "No autorizado. Buen intento.",
+    "codigo": 403
+}
+```
 
 ## Estructura de las respuestas
 Respondemos a todas las peticiones con JSON, volviendo sencilla la conversión de estas respuestas a objetos nativos en varios lenguajes. Esto debería abrir la API a cualquier cliente que soporte estas características y estructuras de datos.

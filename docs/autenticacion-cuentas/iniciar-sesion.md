@@ -6,9 +6,14 @@ slug: /api_iniciar_sesion
 sidebar_position: 1
 ---
 
-Intercambia las credenciales del usuario por un token que debe acompañar
-a todas las peticiones posteriores. Este token representa al usuario en un
-dispositivo y persiste hasta que se hace una peticion para revocarlo.
+Intercambia las credenciales del usuario por un token y un arreglo de permisos. 
+
+El token representa al usuario en un dispositivo y debe acompañar a todas las 
+peticiones posteriores que requieran autenticacion. El token tambien persiste 
+hasta que se hace una peticion para revocarlo.
+
+El arreglo de permisos contiene una serie de cadenas que representan las acciones
+que tiene permitidas el usuario en el sistema.
 
 ### Petición HTTP
 `POST https://gameflake.game/api/tokens/create`
@@ -30,7 +35,6 @@ Este es uno de los pocos endpoints que no requiere un token en el encabezado `Au
 curl "https://gameflake.game/api/tokens/create" \
   -X "POST" \
   -H "Content-Type: multipart/form-data" \
-  -H "Authorization: Bearer <api_token_aqui>" \
   -d $'{
          "email": "gmachia@gmail.com",
          "password": "9yUQc%ewEf^(Tw4",
@@ -40,6 +44,18 @@ curl "https://gameflake.game/api/tokens/create" \
 
 ```json title="Ejemplo de respuesta"
 {
-    "token": "1|63eD2tUsY2Xdfoc5SZgFtWCobvjRYbeioT2XZZYU"
+    "token": "1|63eD2tUsY2Xdfoc5SZgFtWCobvjRYbeioT2XZZYU",
+    "permisos": [
+        "consultarTitulo",
+        "registrarJuego",
+        "consultarJuego",
+        "editarJuego",
+        "eliminarJuego",
+        "registrarOferta",
+        "consultarOferta",
+        "editarOferta",
+        "eliminarOferta",
+        "consultarUsuario"
+    ]
 }
 ```
