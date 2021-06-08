@@ -7,7 +7,8 @@ sidebar_position: 3
 ---
 
 Registra una nueva cuenta de usuario. Por seguridad solo permitimos crear usuarios
-con los permisos mas básicos  por medio de esta API, estos son:
+con los permisos mas básicos (suficientes para usar todos los endpoints documentados aquí)
+por medio de esta API, estos son:
 
 - consultar titulo
 - registrar juego
