@@ -6,7 +6,19 @@ slug: /registrar_usuario
 sidebar_position: 3
 ---
 
-Registra una nueva cuenta de usuario.
+Registra una nueva cuenta de usuario. Por seguridad solo permitimos crear usuarios
+con los permisos mas básicos  por medio de esta API, estos son:
+
+- consultar titulo
+- registrar juego
+- consultar juego
+- editar juego
+- eliminar juego
+- registrar oferta
+- consultar oferta
+- editar oferta
+- eliminar oferta
+- consultar usuario
 
 ### Petición HTTP
 `POST https://gameflake.game/api/users/store`
@@ -28,14 +40,21 @@ Este es uno de los pocos endpoints que no requiere un token en el encabezado `Au
 
 ### Ejemplo de petición y respuesta
 ```shell title="Ejemplo de petición"
-curl "https://gameflake.game/api/tokens/revoke" \
+curl "https://gameflake.game/api/users/store" \
   -X "POST" \
   -H "Content-Type: multipart/form-data" \
-  -H "Authorization: Bearer <api_token_aqui>"
+  -d $'{
+        "first_name": "Julian",
+        "last_name": "Perez",
+        "password": "9yUQc%ewEf^(Tw4",
+        "email": "gmachia@gmail.com",
+        "phone": "4421234567,
+        "user_name": "jules"
+    }'
 ```
 
 ```json title="Ejemplo de respuesta"
 {
-    "mensaje": "El token fue eliminado"
+    "mensaje": "El usuario fue registrado exitosamente."
 }   
 ```
