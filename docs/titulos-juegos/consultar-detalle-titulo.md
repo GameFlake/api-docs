@@ -20,15 +20,15 @@ reprenta un videojuego del cual pueden haber muchas copias o juegos registrados 
 
 ### Estructura de la respuesta
 
-| Atributo         | Tipo de dato | Descripción                                                                            |
-| ---------------- | ------------ | -------------------------------------------------------------------------------------- |
-| idTitulo         | Entero       | Identificador único del título                                                         |
-| nombre           | String       | Nombre del título                                                                      |
-| fechaLanzamiento | Fecha        | Fecha en la que salió por primera vez el título                                        |
-| edicion          | String       | Variante del título. Es útil para aquellos que fueron lanzados con mas de una versión. |
-| imgRuta          | String       | Ruta a la imagen del título                                                            |
-| descripcion      | String       | Texto promocional del título                                                           |
-| calificacion     | Entero       | Un entero entre 1 y 5 indicando la calificación del título                             |
+| Atributo           | Tipo de dato | Descripción                                                                            |
+| ------------------ | ------------ | -------------------------------------------------------------------------------------- |
+| `idTitulo`         | Entero       | Identificador único del título                                                         |
+| `nombre`           | String       | Nombre del título                                                                      |
+| `fechaLanzamiento` | Fecha        | Fecha en la que salió por primera vez el título                                        |
+| `edicion`          | String       | Variante del título. Es útil para aquellos que fueron lanzados con mas de una versión. |
+| `imgRuta`          | String       | Ruta a la imagen del título                                                            |
+| `descripcion`      | String       | Texto promocional del título                                                           |
+| `calificacion`     | Entero       | Un entero entre 1 y 5 indicando la calificación del título                             |
 
 
 ### Ejemplo de petición y respuesta

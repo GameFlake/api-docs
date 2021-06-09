@@ -13,7 +13,7 @@ Siéntete libre de ponerte en contacto por medio de email o la comunidad si tien
 
 
 ## Autenticación
-GameFlake usa un sistema de tokens para autenticar peticiones a la API. **Salvo por crear cuenta de usuario e iniciar sesión, todas las peticiones deben incluir este un token**, y este debe de estar contenido en un
+GameFlake usa un sistema de tokens para autenticar peticiones a la API. **Salvo por crear cuenta de usuario e iniciar sesión, todas las peticiones deben incluir un token**, y este debe de estar contenido en un
 encabezado HTTP que se ve como el siguiente:
 
 `Authorization: Bearer <api_token_aqui>`

@@ -23,18 +23,18 @@ cuenta con el fin de recibir ofertas de intercambio.
 La información viene como una arreglo de objetos json, donde cada objeto contiene
 los datos de un juego.
 
-| Tipo de dato | Atributo             | Descripción                                   |
-| ------------ | -------------------- | --------------------------------------------- |
-| Entero       | idJuego              | Identificador único del juego                 |
-| String       | comentarios          | Observaciones sobre el estado del juego       |
-| Entero       | idUsuario            | Identificador único del dueño del juego       |
-| Entero       | idTitulo             | Identificador único del título del juego      |
-| Entero       | idCondicion          | Identificador único de la condición del juego |
-| Entero       | idConsola            | Identificador único de la consola del juego   |
-| String       | nombreConsola        | Nombre de la consola para la que es el juego  |
-| String       | descripcionCondicion | Texto que indica la condición del juego       |
-| String       | nombreUsuario        | Nombre del dueño del juego                    |
-| String       | nombreTitulo         | Nombre del título                             |
+| Atributo               | Tipo de dato         | Descripción                                   |
+| ---------------------- | -------------------- | --------------------------------------------- |
+| `idJuego`              | Entero               | Identificador único del juego                 |
+| `comentarios`          | String               | Observaciones sobre el estado del juego       |
+| `idUsuario`            | Entero               | Identificador único del dueño del juego       |
+| `idTitulo`             | Entero               | Identificador único del título del juego      |
+| `idCondicion`          | Entero               | Identificador único de la condición del juego |
+| `idConsola`            | Entero               | Identificador único de la consola del juego   |
+| `nombreConsola`        | String               | Nombre de la consola para la que es el juego  |
+| `descripcionCondicion` | String               | Texto que indica la condición del juego       |
+| `nombreUsuario`        | String               | Nombre del dueño del juego                    |
+| `nombreTitulo`         | String               | Nombre del título                             |
 
 
 ### Ejemplo de petición y respuesta

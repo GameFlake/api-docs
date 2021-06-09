@@ -21,15 +21,15 @@ No lleva ningún parámetro en el cuerpo de la petición.
 La información viene como una arreglo de objetos json, donde cada objeto contiene
 los datos de un título.
 
-| Atributo         | Tipo de dato | Descripción                                                                            |
-| ---------------- | ------------ | -------------------------------------------------------------------------------------- |
-| idTitulo         | Entero       | Identificador único del título                                                         |
-| nombre           | String       | Nombre del título                                                                      |
-| fechaLanzamiento | Fecha        | Fecha en la que salió por primera vez el título                                        |
-| edicion          | String       | Variante del título. Es útil para aquellos que fueron lanzados con mas de una versión. |
-| imgRuta          | String       | Ruta a la imagen del título                                                            |
-| descripcion      | String       | Texto promocional del título                                                           |
-| calificacion     | Entero       | Un entero entre 1 y 5 indicando la calificación del título                             |
+| Atributo           | Tipo de dato | Descripción                                                                            |
+| ------------------ | ------------ | -------------------------------------------------------------------------------------- |
+| `idTitulo`         | Entero       | Identificador único del título                                                         |
+| `nombre`           | String       | Nombre del título                                                                      |
+| `fechaLanzamiento` | Fecha        | Fecha en la que salió por primera vez el título                                        |
+| `edicion`          | String       | Variante del título. Es útil para aquellos que fueron lanzados con mas de una versión. |
+| `imgRuta`          | String       | Ruta a la imagen del título                                                            |
+| `descripcion`      | String       | Texto promocional del título                                                           |
+| `calificacion`     | Entero       | Un entero entre 1 y 5 indicando la calificación del título                             |
 
 
 ### Ejemplo de petición y respuesta
