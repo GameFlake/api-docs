@@ -6,7 +6,7 @@ slug: /consultar_juegos
 sidebar_position: 3
 ---
 
-Consulta la información de todos los juegos para un título por su id. Un juego
+Consulta la información de todos los juegos para un título por su `id`. Un juego
 es una copia física del título en cuestión, que algún usuario ha registrado en su
 cuenta con el fin de recibir ofertas de intercambio.
 
