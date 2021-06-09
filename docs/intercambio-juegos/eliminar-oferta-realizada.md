@@ -6,30 +6,22 @@ slug: /consultar_datos_contacto
 sidebar_position: 4
 ---
 
-Intercambia las credenciales del usuario por un token que debe acompañar
-a todas las peticiones posteriores. Este token representa al usuario en un
-dispositivo y persiste hasta que se hace una peticion para revocarlo.
+Borra el registro de una oferta. Solo se deben intentar borrar ofertas
+realizadas por el usuario y con el estado *Pendiente*.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/tokens/create`
+`DELETE https://gameflake.game/api/ofertas/<id>`
 
 ### Parámetros de la petición.
-| Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                    |
-| ------------- | ------------ | ---------------- | ---------------------------------------------- |
-| `email`       | String       | Si               | Dirección de correo electrónico del usuario.   |
-| `password`    | String       | Si               | Contraseña de la cuenta del usuario.           |
-| `device_name` | String       | Si               | Nombre del dispositivo donde se inicia sesión. |
-
-:::info
-Este es uno de los pocos endpoints que no requiere un token en el encabezado `Authorization: Bearer <api_token_aqui>`.
-:::
+| Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                                             |
+| ------------- | ------------ | ---------------- | ----------------------------------------------------------------------- |
+| `id`          | Entero       | Si               | Identificador único de la oferta a eliminar (se sustituye en la URL).   |
 
 
 ### Ejemplo de petición y respuesta
 ```shell title="Ejemplo de petición"
 curl "https://gameflake.game/api/tokens/create" \
-  -X "POST" \
-  -H "Content-Type: multipart/form-data" \
+  -X "DELETE" \
   -H "Authorization: Bearer <api_token_aqui>" \
 ```
 

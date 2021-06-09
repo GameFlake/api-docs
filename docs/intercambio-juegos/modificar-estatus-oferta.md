@@ -27,10 +27,10 @@ transiciones entre ellos:
 `PUT https://gameflake.game/api/ofertas/<id>/update`
 
 ### Parámetros de la petición.
-| Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                    |
-| ------------- | ------------ | ---------------- | ---------------------------------------------- |
-| `id`          | Entero       | Si               | Identificador único de la oferta a modificar.  |
-| `estado`      | String       | Si               | Nuevo estado a asignar a la oferta.            |
+| Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                                             |
+| ------------- | ------------ | ---------------- | ----------------------------------------------------------------------- |
+| `id`          | Entero       | Si               | Identificador único de la oferta a modificar (se sustituye en la URL).  |
+| `estado`      | String       | Si               | Nuevo estado a asignar a la oferta.                                     |
 
 
 ### Ejemplo de petición y respuesta

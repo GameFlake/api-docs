@@ -13,9 +13,9 @@ reprenta un videojuego del cual pueden haber muchas copias o juegos registrados 
 `GET https://gameflake.game/api/titulos/<id>`
 
 ### Parámetros de la petición.
-| Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                        |
-| ----------- | ------------ | ---------------- | -----------------------------------|
-| `id`        | Entero       | Si               | El identificador único del título  |
+| Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                                                  |
+| ----------- | ------------ | ---------------- | -------------------------------------------------------------|
+| `id`        | Entero       | Si               | El identificador único del título (se sustituye en la URL).  |
 
 
 ### Estructura de la respuesta

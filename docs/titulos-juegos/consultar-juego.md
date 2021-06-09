@@ -14,9 +14,9 @@ cuenta con el fin de recibir ofertas de intercambio.
 `GET https://gameflake.game/api/titulos/<id>/juegos`
 
 ### Parámetros de la petición.
-| Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                        |
-| ----------- | ------------ | ---------------- | -----------------------------------|
-| `id`        | Entero       | Si               | El identificador único del título  |
+| Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                                                |
+| ----------- | ------------ | ---------------- | ---------------------------------------------------------- |
+| `id`        | Entero       | Si               | El identificador único del título (se sustituy en la URL). |
 
 
 ### Estructura de la respuesta
