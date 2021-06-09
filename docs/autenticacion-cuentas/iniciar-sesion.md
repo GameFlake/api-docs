@@ -16,7 +16,7 @@ El arreglo de permisos contiene una serie de cadenas que representan las accione
 que tiene permitidas el usuario en el sistema.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/tokens/create`
+`POST https://api.purnito.codes/api/tokens/create`
 
 ### Parámetros de la petición.
 | Nombre              | Tipo de dato | ¿Es obligatorio? | Descripción                                             |

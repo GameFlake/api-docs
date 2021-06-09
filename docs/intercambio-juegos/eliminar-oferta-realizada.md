@@ -1,8 +1,8 @@
 ---
 id: 004 
-title: Consultar datos de contacto
-description: Documentación del endpoint para consultar datos de contacto
-slug: /consultar_datos_contacto
+title: Eliminar oferta realizada
+description: Documentación del endpoint para eliminar oferta realizada
+slug: /eliminar_oferta_realizadas
 sidebar_position: 4
 ---
 
@@ -10,7 +10,7 @@ Borra el registro de una oferta. Solo se deben intentar borrar ofertas
 realizadas por el usuario y con el estado *Pendiente*.
 
 ### Petición HTTP
-`DELETE https://gameflake.game/api/ofertas/<id>`
+`DELETE https://api.purnito.codes/api/ofertas/<id>`
 
 ### Parámetros de la petición.
 | Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                                             |

@@ -7,10 +7,10 @@ sidebar_position: 2
 ---
 
 Consulta la información un título por su `id`. Un título, a diferencia de un juego, 
-reprenta un videojuego del cual pueden haber muchas copias o juegos registrados en GameFlake.
+representa un videojuego del cual pueden haber muchas copias o juegos registrados en GameFlake.
 
 ### Petición HTTP
-`GET https://gameflake.game/api/titulos/<id>`
+`GET https://api.purnito.codes/api/titulos/<id>`
 
 ### Parámetros de la petición.
 | Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                                                  |

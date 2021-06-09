@@ -11,7 +11,7 @@ es una copia física del título en cuestión, que algún usuario ha registrado 
 cuenta con el fin de recibir ofertas de intercambio.
 
 ### Petición HTTP
-`GET https://gameflake.game/api/titulos/<id>/juegos`
+`GET https://api.purnito.codes/api/titulos/<id>/juegos`
 
 ### Parámetros de la petición.
 | Nombre      | Tipo de dato | ¿Es obligatorio? | Descripción                                                |

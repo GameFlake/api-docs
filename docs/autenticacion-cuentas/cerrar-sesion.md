@@ -9,7 +9,7 @@ sidebar_position: 2
 Elimina un token de autenticación emitido previamente.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/tokens/revoke`
+`POST https://api.purnito.codes/api/tokens/revoke`
 
 ### Parámetros de la petición.
 No lleva ningún parámetro en el cuerpo de la petición.

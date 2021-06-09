@@ -10,7 +10,7 @@ Consulta la información de todas las ofertas de intercambio de juegos que
 ha recibido el usuario del token enviado junto con la solicitud.
 
 ### Petición HTTP
-`GET https://gameflake.game/api/ofertas/recibidas`
+`GET https://api.purnito.codes/api/ofertas/recibidas`
 
 ### Parámetros de la petición.
 No lleva ningún parámetro en el cuerpo de la petición.

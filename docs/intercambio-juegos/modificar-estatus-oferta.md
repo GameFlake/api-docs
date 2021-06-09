@@ -24,7 +24,7 @@ transiciones entre ellos:
     concretar un intercambio despues de que fue aprobado.
 
 ### Petición HTTP
-`PUT https://gameflake.game/api/ofertas/<id>/update`
+`PUT https://api.purnito.codes/api/ofertas/<id>/update`
 
 ### Parámetros de la petición.
 | Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                                             |

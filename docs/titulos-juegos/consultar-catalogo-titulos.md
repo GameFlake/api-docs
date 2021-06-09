@@ -7,11 +7,11 @@ sidebar_position: 1
 ---
 
 Consulta la información de todos los títulos en el catálogo de GameFlake.
-Un título, a diferencia de un juego, reprenta un videojuego del cual pueden
+Un título, a diferencia de un juego, representa un videojuego del cual pueden
 haber muchas copias o juegos registrados en GameFlake.
 
 ### Petición HTTP
-`GET https://gameflake.game/api/titulos`
+`GET https://api.purnito.codes/api/titulos`
 
 ### Parámetros de la petición.
 No lleva ningún parámetro en el cuerpo de la petición.

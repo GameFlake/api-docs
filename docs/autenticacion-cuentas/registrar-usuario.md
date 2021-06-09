@@ -22,7 +22,7 @@ por medio de esta API, estos son:
 - consultar usuario
 
 ### Petición HTTP
-`POST https://gameflake.game/api/users/store`
+`POST https://api.purnito.codes/api/users/store`
 
 ### Parámetros de la petición.
 | Nombre       | Tipo de dato | ¿Es obligatorio? | Descripción                                        |
