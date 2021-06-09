@@ -19,7 +19,6 @@ No lleva ningún parámetro en el cuerpo de la petición.
 ```shell title="Ejemplo de petición"
 curl "https://gameflake.game/api/tokens/revoke" \
   -X "POST" \
-  -H "Content-Type: multipart/form-data" \
   -H "Authorization: Bearer <api_token_aqui>"
 ```
 

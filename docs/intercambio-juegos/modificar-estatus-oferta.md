@@ -6,40 +6,46 @@ slug: /modificar_estatus_ofertas
 sidebar_position: 3
 ---
 
-Intercambia las credenciales del usuario por un token que debe acompañar
-a todas las peticiones posteriores. Este token representa al usuario en un
-dispositivo y persiste hasta que se hace una peticion para revocarlo.
+Cambia el estado de oferta una oferta. Este estado indica la etapa en la que se 
+encuentra la oferta. El siguiente diagrama resume todos los posibles estados y las
+transiciones entre ellos:
+
+![Docusaurus](/img/estados.svg)
+
+- **Pendiente**: el primer estado inmediatamente despues de registrar una oferta.
+    En este estado se puede aprovar o rechazar la oferta
+- **Rechazada**: este es un estado final que ocurre si el recipiente de una oferta 
+    la declina cuando esta pendiente.    
+- **Aprobada**: este estado representa una oferta que fue aceptada por su recipiente 
+    pero que aun no se completa por que los juegos no han sido intercambiados fisicamente.
+- **Terminada**: este es un estado final que se representa que una oferta aprobada fue
+    fue concretada con el intercambio de los juegos fisicos.
+- **Cancelada**: otro estado final que se presenta cuando los usuario involucrados no pueden
+    concretar un intercambio despues de que fue aprobado.
 
 ### Petición HTTP
-`POST https://gameflake.game/api/tokens/create`
+`PUT https://gameflake.game/api/ofertas/<id>/update`
 
 ### Parámetros de la petición.
 | Nombre        | Tipo de dato | ¿Es obligatorio? | Descripción                                    |
 | ------------- | ------------ | ---------------- | ---------------------------------------------- |
-| `email`       | String       | Si               | Dirección de correo electrónico del usuario.   |
-| `password`    | String       | Si               | Contraseña de la cuenta del usuario.           |
-| `device_name` | String       | Si               | Nombre del dispositivo donde se inicia sesión. |
-
-:::info
-Este es uno de los pocos endpoints que no requiere un token en el encabezado `Authorization: Bearer <api_token_aqui>`.
-:::
+| `id`          | Entero       | Si               | Identificador único de la oferta a modificar.  |
+| `estado`      | String       | Si               | Nuevo estado a asignar a la oferta.            |
 
 
 ### Ejemplo de petición y respuesta
 ```shell title="Ejemplo de petición"
-curl "https://gameflake.game/api/tokens/create" \
-  -X "POST" \
+curl "https://gameflake.game/api/ofertas/<id>/update" \
+  -X "PUT" \
   -H "Content-Type: multipart/form-data" \
   -H "Authorization: Bearer <api_token_aqui>" \
   -d $'{
-         "email": "gmachia@gmail.com",
-         "password": "9yUQc%ewEf^(Tw4",
-         "device_name": "iPhone 4s"
+         "estado": "Aprobada"
      }'
 ```
 
 ```json title="Ejemplo de respuesta"
 {
-    "token": "1|63eD2tUsY2Xdfoc5SZgFtWCobvjRYbeioT2XZZYU"
+    "mensaje": "El estado de la oferta se cambió exitosamente."
 }
 ```

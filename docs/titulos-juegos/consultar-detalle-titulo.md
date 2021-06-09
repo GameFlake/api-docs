@@ -34,8 +34,7 @@ reprenta un videojuego del cual pueden haber muchas copias o juegos registrados 
 ### Ejemplo de petición y respuesta
 ```shell title="Ejemplo de petición"
 curl "https://gameflake.game/api/titulos/1" \
-  -X "POST" \
-  -H "Content-Type: multipart/form-data" \
+  -X "GET" \
   -H "Authorization: Bearer <api_token_aqui>" \
 ```
 

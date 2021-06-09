@@ -31,15 +31,10 @@ curl "https://gameflake.game/api/tokens/create" \
   -X "POST" \
   -H "Content-Type: multipart/form-data" \
   -H "Authorization: Bearer <api_token_aqui>" \
-  -d $'{
-         "email": "gmachia@gmail.com",
-         "password": "9yUQc%ewEf^(Tw4",
-         "device_name": "iPhone 4s"
-     }'
 ```
 
 ```json title="Ejemplo de respuesta"
 {
-    "token": "1|63eD2tUsY2Xdfoc5SZgFtWCobvjRYbeioT2XZZYU"
+    "mensaje": "La oferta se eliminó exitosamente."
 }
 ```

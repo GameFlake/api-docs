@@ -35,8 +35,7 @@ los datos de una de las ofertas realizadas.
 ### Ejemplo de petición y respuesta
 ```shell title="Ejemplo de petición"
 curl "https://gameflake.game/api/ofertas/realizadas" \
-  -X "POST" \
-  -H "Content-Type: multipart/form-data" \
+  -X "GET" \
   -H "Authorization: Bearer <api_token_aqui>" \
 ```
 
